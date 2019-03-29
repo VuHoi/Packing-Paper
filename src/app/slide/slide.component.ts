@@ -9,13 +9,17 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   ]
 })
 export class SlideComponent implements OnInit {
-
+  isScroll = false;
   constructor() { }
 
   ngOnInit() {
   }
   @HostListener('window:scroll', [])
   onScroll(): void {
-    console.log(window.scrollY);
+    if (window.scrollY > 0) {
+      this.isScroll = true;
+    } else {
+      this.isScroll = false;
+    }
   }
 }

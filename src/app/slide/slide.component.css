@@ -28,3 +28,21 @@ a{
 .h-75x{
     height: 600px;
 }
+
+.hidden-header{
+    display: none;
+}
+
+.position-fixed{
+    position: static;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #FFFFFF;
+    z-index: 1000;
+}
+
+.mr-10{
+    margin-right: 10%;
+}
