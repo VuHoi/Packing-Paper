@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {AlertModule} from 'ngx-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './root/app.component';
+import { SlideComponent } from './slide/slide.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
