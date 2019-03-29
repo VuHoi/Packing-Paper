@@ -6,3 +6,25 @@
 a{
     color:black;
 }
+.heightHeader{
+    height:700px;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.size-button{
+    width:40px;
+    height: 15px;
+}
+.position-absolute{
+    position: absolute;
+}
+.h-75x{
+    height: 600px;
+}
