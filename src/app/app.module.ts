@@ -6,11 +6,13 @@ import { AppComponent } from './root/app.component';
 import { SlideComponent } from './slide/slide.component';
 import { CommitmentComponent } from './commitment/commitment.component';
 import { CollapseModule } from 'ngx-bootstrap';
+import { PackingPaperComponent } from './packing-paper/packing-paper.component';
 @NgModule({
   declarations: [
     AppComponent,
     SlideComponent,
-    CommitmentComponent
+    CommitmentComponent,
+    PackingPaperComponent
   ],
   imports: [
     BrowserModule,
