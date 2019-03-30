@@ -7,9 +7,17 @@ a{
     color:black;
 }
 .heightHeader{
-    height:700px;
+    width: 100%;
 }
-
+.h-75x{
+    width: 90%;
+}
+.desktop{
+    display: none;
+}
+.mobile{
+    display: block;
+}
 .w-60{
     width: 60%;
 }
@@ -25,9 +33,7 @@ a{
 .position-absolute{
     position: absolute;
 }
-.h-75x{
-    height: 600px;
-}
+
 
 .hidden-header{
     display: none;
@@ -45,4 +51,57 @@ a{
 
 .mr-10{
     margin-right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .heightHeader{
+        width: 100%;
+    }
+    .h-75x{
+        width: 90%;
+    }
+} 
+ /* mobile */
+
+
+
+@media only screen and (min-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .heightHeader{
+        width: 100%;
+    }
+    .h-75x{
+        width: 90%;
+    }
+    
+} 
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    .heightHeader{
+        width: 80%;
+    }
+    .h-75x{
+        width: 100%;
+    }
 }

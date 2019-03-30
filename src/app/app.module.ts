@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './root/app.component';
 import { SlideComponent } from './slide/slide.component';
 import { CommitmentComponent } from './commitment/commitment.component';
-
+import { CollapseModule } from 'ngx-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,8 @@ import { CommitmentComponent } from './commitment/commitment.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

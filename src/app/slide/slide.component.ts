@@ -5,15 +5,21 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.css'],
   providers: [
-    { provide: CarouselConfig, useValue: { interval: 20000, noPause: false, showIndicators: true } }
+    { provide: CarouselConfig, useValue: { interval: 2000000, noPause: false, showIndicators: true } }
   ]
 })
 export class SlideComponent implements OnInit {
   isScroll = false;
+  urlImage = '/assets/images/white-paper.png';
+  isCollapsed = true;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (window.scrollY > 0) {
@@ -21,5 +27,9 @@ export class SlideComponent implements OnInit {
     } else {
       this.isScroll = false;
     }
+  }
+
+  changeImage(color: string) {
+    this.urlImage = `/assets/images/${color}-paper.png`;
   }
 }
