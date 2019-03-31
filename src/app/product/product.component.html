@@ -1,24 +1,61 @@
 <div class=" mt-5 background pb-5">
-  <div class="container">
+  <div class="container ">
     <h3 class="pt-5 pb-3 d-flex justify-content-center font-weight-bold">
       Sản phẩm giấy gói
     </h3>
     <div class="d-flex justify-content-center">
       <nav class="nav">
-        <a class="nav-link h5 " (click)="show()">
+        <a class="nav-link h5 " (mouseenter)="show('dumpling')" (click)="selectTab('dumpling')"  (mouseleave)="leaveTab()">
           <div>
-              Bánh bao
-              <div class="line mt-2" @line *ngIf="isShow"></div>
+            Bánh bao
+            <div class="line mt-2" @line *ngIf="isDumpling"></div>
           </div>
         </a>
-        <a class="nav-link h5 " href="#">Bánh mì</a>
-        <a class="nav-link h5 " href="#">Thuốc bắc</a>
+        <a class="nav-link h5 " (mouseenter)="show('bread')" (click)="selectTab('bread')" (mouseleave)="leaveTab()">
+          <div>
+            Bánh mì
+            <div class="line mt-2" @line *ngIf="isBread"></div>
+          </div>
+
+        </a>
+        <a class="nav-link h5 " (mouseenter)="show('medicine')" (click)="selectTab('medicine')" (mouseleave)="leaveTab()">
+          <div class="text-center">
+            Thuốc bắc
+            <div class="line mt-2" @line *ngIf="isMedicine"></div>
+          </div>
+        </a>
       </nav>
     </div>
-    <div class="d-flex justify-content-center" @move *ngIf="isShow">
-      <app-product-card rate="4" title="Gói bánh bao"   price="80.000" image="/assets/images/white-paper.png" color="#3EC1D5"></app-product-card>
-      <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png" color="#74D384"></app-product-card>
-      <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png" color="#FFCE44"></app-product-card>
+<div class="d-flex position-relative " style=" height: 550px;">
+    <!-- dumpling -->
+    <div class="d-flex justify-content-center position-absolute container" @move *ngIf="selected==='dumpling'">
+      <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        color="#3EC1D5"></app-product-card>
+      <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        color="#74D384"></app-product-card> 
+      <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        color="#FFCE44"></app-product-card>
     </div>
+
+     <!-- bread -->
+     <div class="d-flex justify-content-center position-absolute" @move *ngIf="selected==='bread'">
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#3EC1D5"></app-product-card>
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#74D384"></app-product-card>
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#FFCE44"></app-product-card>
+      </div>
+
+       <!-- medicine -->
+    <div class="d-flex justify-content-center position-absolute" @move *ngIf="selected==='medicine'">
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#3EC1D5"></app-product-card>
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#74D384"></app-product-card>
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+          color="#FFCE44"></app-product-card>
+      </div>
   </div>
+</div>
 </div>

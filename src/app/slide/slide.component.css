@@ -53,8 +53,17 @@ a{
 .mr-10{
     margin-right: 10%;
 }
-
-
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.rotate{
+    animation: App-logo-spin infinite 100s linear;
+}
  /* mobile */
 @media only screen and (max-width: 600px) {
     .desktop{

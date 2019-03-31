@@ -19,10 +19,14 @@ export const SlideOutAnimate = animation(
 
 export const LineInAnimate = animation(
     animate('300ms linear', keyframes([
-        style({  width: '20px', offset: 0.0 }),
-        style({   width: '80px', offset: 1 })
+        style({ width: '20px', offset: 0.0 }),
+        style({ width: '100%', offset: 1 })
     ])));
-
+export const LineOutAnimate = animation(
+    animate('300ms linear', keyframes([
+        style({ width: '100%', offset: 0.0 }),
+        style({ width: '0px', offset: 1 })
+    ])));
 
 
 
