@@ -3,4 +3,26 @@ a{
     font-weight: 500;
     cursor: pointer;
 }
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+/* mobile */
+@media only screen and (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+   
+} 
 
+.lineMobile{
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    border-top: 1px dotted black;
+}
