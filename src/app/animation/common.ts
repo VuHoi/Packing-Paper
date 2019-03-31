@@ -27,7 +27,29 @@ export const LineOutAnimate = animation(
         style({ width: '100%', offset: 0.0 }),
         style({ width: '0px', offset: 1 })
     ])));
+export const SlideInRightAnimate = animation(
+    animate('300ms linear', keyframes([
+        style({ transform: 'translate3d(100%, 0, 0)', visibility: 'visible', offset: 0.0 }),
+        style({ transform: 'translate3d(0, 0, 0)', offset: 1 })
+    ])));
 
+export const ZoomOutAnimate = animation(
+    animate('300ms linear', keyframes([
+        style({ opacity: 1, offset: 0.0 }),
+        style({ opacity: 0, transform: 'scale3d(0.3, 0.3, 0.3)', offset: 0.5 }),
+        style({ opacity: 0, offset: 1 })
+    ])));
+
+export const ButtonOutAnimate = animation(
+    animate('500ms linear', keyframes([
+        style({ transform: 'scale3d(1.5, 1.5, 1.5)', offset: 1 })
+    ])));
+
+export const ButtonInAnimate = animation(
+    animate('500ms linear', keyframes([
+        style({transform: 'scale3d(1.3, 1.3, 1.3)',  offset: 0.0 }),
+        style({ transform: 'scale3d(1, 1, 1)', offset: 1 }),
+    ])));
 
 
 

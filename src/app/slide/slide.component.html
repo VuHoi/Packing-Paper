@@ -29,7 +29,7 @@
   <slide>
     <div class="d-flex">
       <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
-        <h3 class="font-weight-bold">
+        <h3 class="font-weight-bold" >
           Giấy gói bánh bao
         </h3>
         <div class="mt-2 text-center w-50">
@@ -39,15 +39,15 @@
         <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
         <br />
         <div class="d-flex">
-          <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
-          <button class="m-2 btn-warning size-button" (click)="changeImage('yellow')"></button>
-          <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
+          <button class="m-2 btn btn-success size-button" [@button]="greenAnim" (click)="changeImage('white')"></button>
+          <button class="m-2 btn btn-warning size-button" [@button]="yellowAnim" (click)="changeImage('yellow')"></button>
+          <button class="m-2 btn btn-danger size-button" [@button]="redAnim" (click)="changeImage('red')"></button>
         </div>
       </div>
-      <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
-        <img class="heightHeader rotate" src="/assets/images/pattern.png"  />
+      <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column " >
+        <img class="heightHeader rotate" src="/assets/images/pattern.png" />
         <div class="position-absolute text-center">
-          <img class="heightHeader h-75x" [src]="urlImage" />
+          <img class="heightHeader h-75x" [src]="urlImage"  [@slide]="stateAnim"/>
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
         <h3 class="font-weight-bold">
           Giấy gói bánh mì
         </h3>
-        <div class="mt-2 text-center">
+        <div class="mt-2 text-center w-50 ">
           Một món ăn đặc trưng cho văn hóa ẩm thực đường phố ưa thích, nên nhu cầu sử dụng túi giấy đựng bánh mì được
           phổ biến và cần thiết trên thị trường.
         </div>
@@ -67,9 +67,9 @@
 
       </div>
       <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
-        <img class="heightHeader" src="/assets/images/pattern.png" />
-        <div class="position-absolute">
-          <img class="heightHeader h-75x" src="/assets/images/banhmi.png" />
+        <img class="heightHeader rotate" src="/assets/images/pattern.png" />
+        <div class="position-absolute text-center">
+          <img class="heightHeader h-75x " [@slide]="stateAnim"  src="/assets/images/banhmi.png" />
         </div>
       </div>
     </div>
@@ -81,23 +81,23 @@
         <h3 class="font-weight-bold">
           Giấy gói thuốc bắc
         </h3>
-        <div class="mt-2 text-center">
+        <div class="mt-2 text-center w-50">
           Một món ăn đặc trưng cho văn hóa ẩm thực đường phố ưa thích, nên nhu cầu sử dụng túi giấy đựng bánh mì được
           phổ biến và cần thiết trên thị trường.
         </div>
         <br />
         <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
         <br />
-        <div class="d-flex">
+        <!-- <div class="d-flex">
           <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
           <button class="m-2 btn-warning size-button" (click)="changeImage('yellow')"></button>
           <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
-        </div>
+        </div> -->
       </div>
       <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
-        <img class="heightHeader" src="/assets/images/pattern.png" />
-        <div class="position-absolute">
-          <img class="heightHeader h-75x" src="/assets/images/thuocbac.png" />
+        <img class="heightHeader rotate" src="/assets/images/pattern.png" />
+        <div class="position-absolute text-center">
+          <img  class="heightHeader h-75x "  [@slide]="stateAnim"  src="/assets/images/thuocbac1.png" />
         </div>
       </div>
     </div>
@@ -117,12 +117,12 @@
         </div>
       </div>
       <br />
-      <div class="d-flex">
+      <!-- <div class="d-flex">
         <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
         <button class="m-2 btn-warning size-button" (click)="changeImage('yellow')"></button>
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
-      <br />
+      <br /> -->
       <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
     </div>
   </slide>
@@ -131,8 +131,6 @@
         <h3 class="font-weight-bold">
             Giấy gói bánh mì
         </h3>
-  
-  
         <div class="d-flex align-items-center  justify-content-center heightHeader flex-column">
             <img class="heightHeader" src="/assets/images/pattern.png" />
             <div class="position-absolute text-center">
@@ -152,12 +150,12 @@
     <slide>
         <div class="d-flex flex-column align-items-center justify-content-center">
           <h3 class="font-weight-bold">
-            Giấy gói bánh bao
+            Giấy gói thuốc bắc
           </h3>
           <div class="d-flex align-items-center   justify-content-center heightHeader flex-column">
               <img class="heightHeader" src="/assets/images/pattern.png" />
               <div class="position-absolute text-center">
-                <img class="heightHeader h-75x" src="/assets/images/thuocbac.png" />
+                <img class="heightHeader h-75x" src="/assets/images/thuocbac1.png" />
               </div>
           </div>
           <br />
