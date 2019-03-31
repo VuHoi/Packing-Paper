@@ -79,7 +79,12 @@ a{
     margin-top: 80px;
 }
 
-
+.btn-outline-success{
+    color:green !important;
+}
+.btn-outline-success:hover{
+    color:white !important;
+}
 
 
 

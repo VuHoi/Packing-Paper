@@ -49,7 +49,7 @@
           các loại đồ ăn vặt
         </div>
         <br />
-        <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+        <a class="btn btn-outline-success" href="#product" (click)="detail('dumpling')" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
         <br />
         <div class="d-flex">
           <button class="m-2 btn btn-success size-button" [@button]="greenAnim" (click)="changeImage('white')"></button>
@@ -77,7 +77,7 @@
           phổ biến và cần thiết trên thị trường.
         </div>
         <br />
-        <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+        <a class="btn btn-outline-success" href="#product" (click)="detail('bread')" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
 
       </div>
       <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
@@ -100,7 +100,7 @@
           phổ biến và cần thiết trên thị trường.
         </div>
         <br />
-        <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+        <a class="btn btn-outline-success" href="#product" (click)="detail('medicine')" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
         <br />
         <!-- <div class="d-flex">
           <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
@@ -138,7 +138,7 @@
           <button class="m-2 btn btn-danger size-button" [@button]="redAnim" (click)="changeImage('red')"></button>
         </div>
       <br />
-      <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+      <a class="btn btn-outline-success" href="#dumplingMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
   <slide>
@@ -159,7 +159,7 @@
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
       <br /> -->
-      <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+      <button class="btn btn-outline-success" href="#breadMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</button>
     </div>
   </slide>
   <slide>
@@ -180,7 +180,7 @@
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
       <br /> -->
-      <button class="btn btn-outline-success">Chi tiết sản phẩm</button>
+      <a class="btn btn-outline-success" href="#medicineMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
 </carousel>

@@ -4,6 +4,7 @@ import { trigger, transition, useAnimation } from '@angular/animations';
 import { SlideInRightAnimate, ButtonOutAnimate, ButtonInAnimate, slideInLeftAnimate, slideOutLeftAnimate } from '../animation/common';
 import { interval, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { SharedService } from '../shareService';
 @Component({
   selector: 'app-slide',
   templateUrl: './slide.component.html',
@@ -44,7 +45,7 @@ export class SlideComponent implements OnInit {
   destroy$: Subject<boolean> = new Subject<boolean>();
   selectedPage1 = 'white';
   isNav = false;
-  constructor() { }
+  constructor(private shareService: SharedService) { }
 
   ngOnInit() {
     let time = 0;
@@ -115,5 +116,7 @@ export class SlideComponent implements OnInit {
       this.greenAnim = 'leave';
     }, 300);
   }
-
+  detail(category: string) {
+    this.shareService.sendProduct(category);
+  }
 }

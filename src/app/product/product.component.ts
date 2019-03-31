@@ -3,6 +3,7 @@ import { trigger, transition, useAnimation } from '@angular/animations';
 import { SlideInAnimate, SlideOutAnimate, LineInAnimate, LineOutAnimate } from '../animation/common';
 import { interval, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { SharedService } from '../shareService';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -30,7 +31,12 @@ export class ProductComponent implements OnInit {
   isMedicine = false;
   selected = 'dumpling';
   destroy$: Subject<boolean> = new Subject<boolean>();
-  constructor() { }
+  constructor(private shareService: SharedService) {
+    this.shareService.getproduct().subscribe((category) => {
+      this.selectTab(category);
+      this.leaveTab();
+    });
+  }
 
   ngOnInit() {
     interval(5000)
