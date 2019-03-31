@@ -1,7 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
 import { trigger, transition, useAnimation } from '@angular/animations';
-import { SlideInRightAnimate, ZoomOutAnimate, ButtonOutAnimate, ButtonInAnimate } from '../animation/common';
+import { SlideInRightAnimate, ButtonOutAnimate, ButtonInAnimate, slideInLeftAnimate, slideOutLeftAnimate } from '../animation/common';
 import { interval, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 @Component({
@@ -24,19 +24,26 @@ import { takeUntil } from 'rxjs/operators';
       transition('enter=>leave', [
         useAnimation(ButtonInAnimate)
       ])
+    ]),
+    trigger('navigation', [
+      transition(':enter', [
+        useAnimation(slideInLeftAnimate)
+      ]), transition(':leave', [
+        useAnimation(slideOutLeftAnimate)
+      ])
     ])
   ]
 })
 export class SlideComponent implements OnInit {
   isScroll = false;
   urlImage = '/assets/images/white-paper.png';
-  isCollapsed = true;
   stateAnim = 'leave';
   redAnim = 'leave';
   yellowAnim = 'leave';
   greenAnim = 'leave';
   destroy$: Subject<boolean> = new Subject<boolean>();
   selectedPage1 = 'white';
+  isNav = false;
   constructor() { }
 
   ngOnInit() {
@@ -86,6 +93,9 @@ export class SlideComponent implements OnInit {
     }
   }
 
+  showNav() {
+    this.isNav = !this.isNav;
+  }
   changeImage(color: string) {
     this.urlImage = `/assets/images/${color}-paper.png`;
     if (color === 'red') {

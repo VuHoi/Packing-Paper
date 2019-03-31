@@ -47,9 +47,18 @@ export const ButtonOutAnimate = animation(
 
 export const ButtonInAnimate = animation(
     animate('500ms linear', keyframes([
-        style({transform: 'scale3d(1.3, 1.3, 1.3)',  offset: 0.0 }),
+        style({ transform: 'scale3d(1.3, 1.3, 1.3)', offset: 0.0 }),
         style({ transform: 'scale3d(1, 1, 1)', offset: 1 }),
     ])));
 
+export const slideInLeftAnimate = animation(
+    animate('500ms linear', keyframes([
+        style({ transform: 'translate3d(-100%, 0, 0)', visibility: 'visible', offset: 0.0 }),
+        style({ transform: 'translate3d(0, 0, 0)', offset: 1 }),
+    ])));
 
-
+export const slideOutLeftAnimate = animation(
+    animate('300ms linear', keyframes([
+        style({ transform: 'translate3d(0, 0, 0)', offset: 0 }),
+        style({ transform: 'translate3d(-100%, 0, 0)', visibility: 'visible', offset: 1 })
+    ])));
