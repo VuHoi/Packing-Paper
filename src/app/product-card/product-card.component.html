@@ -1,3 +1,13 @@
-<p>
-  product-card works!
-</p>
+<div class="card color m-2 mt-5" [ngStyle]="{'background-color': color}">
+  <div class="d-flex justify-content-center  p-4">
+    <div class="text-center">
+      <h3 class="font-weight-bold">{{title}}</h3>
+
+      <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>
+      <h3 class="font-weight-bold">{{price}}</h3>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <img class="w-100" [src]="image" alt="product"/>
+  </div>
+</div>

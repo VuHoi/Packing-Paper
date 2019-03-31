@@ -8,19 +8,32 @@ import { CommitmentComponent } from './commitment/commitment.component';
 import { CollapseModule } from 'ngx-bootstrap';
 import { ProductComponent } from './product/product.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { RatingModule } from 'ngx-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
     SlideComponent,
     CommitmentComponent,
     ProductComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    NgxPageScrollModule,
+    BrowserAnimationsModule,
     CarouselModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    RatingModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

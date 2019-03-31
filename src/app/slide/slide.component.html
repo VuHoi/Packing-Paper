@@ -5,10 +5,10 @@
   </div>
   <div class="d-flex justify-content-end  font-weight-bold " [ngClass]="{'position-fixed':isScroll}">
     <nav class="nav mr-10 pt-2 pb-2">
-      <a class="nav-link active" href="#">Trang chủ</a>
-      <a class="nav-link" href="#">Sản phẩm</a>
-      <a class="nav-link" href="#">Liên hệ</a>
-      <a class="nav-link " href="#">Thông tin</a>
+      <a class="nav-link active" href="#slide" [pageScrollSpeed]="300" pageScroll>Trang chủ</a>
+      <a class="nav-link" href="#product" [pageScrollSpeed]="300" pageScroll >Sản phẩm</a>
+      <a class="nav-link" href="#contact" [pageScrollSpeed]="300" pageScroll>Liên hệ</a>
+      <a class="nav-link " href="#about" [pageScrollSpeed]="300" pageScroll>Thông tin</a>
     </nav>
   </div>
 </div>
@@ -25,7 +25,7 @@
     <a class="nav-link " href="#">Thông tin</a>
   </div>
 </div>
-<carousel class="desktop">
+<carousel class="desktop" id="slide" >
   <slide>
     <div class="d-flex">
       <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
