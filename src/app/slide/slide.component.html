@@ -116,6 +116,33 @@
       </div>
     </div>
   </slide>
+  <slide>
+    <div class="d-flex">
+      <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
+        <h3 class="font-weight-bold">
+          Giấy A4(Giấy văn phòng)
+        </h3>
+        <div class="mt-2 text-center w-50">
+          Một món ăn đặc trưng cho văn hóa ẩm thực đường phố ưa thích, nên nhu cầu sử dụng túi giấy đựng bánh mì được
+          phổ biến và cần thiết trên thị trường.
+        </div>
+        <br />
+        <a class="btn btn-outline-success" href="#a4paper"  [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
+        <br />
+        <!-- <div class="d-flex">
+          <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
+          <button class="m-2 btn-warning size-button" (click)="changeImage('yellow')"></button>
+          <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
+        </div> -->
+      </div>
+      <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
+        <img class="heightHeader rotate" src="/assets/images/pattern.png" />
+        <div class="position-absolute text-center">
+          <img class="heightHeader h-75x " [@slide]="stateAnim" src="/assets/images/a4large.png" />
+        </div>
+      </div>
+    </div>
+  </slide>
 </carousel>
 
 <carousel class="mobile mt-10" id="slidemobile">
@@ -181,6 +208,27 @@
       </div>
       <br /> -->
       <a class="btn btn-outline-success" href="#medicineMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
+    </div>
+  </slide>
+  <slide>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <h3 class="font-weight-bold">
+        Giấy A4 (Giấy văn phòng)
+      </h3>
+      <div class="d-flex align-items-center   justify-content-center heightHeader flex-column">
+        <img class="heightHeader" src="/assets/images/pattern.png" />
+        <div class="position-absolute text-center">
+          <img class="heightHeader h-75x" src="/assets/images/a4large.png" />
+        </div>
+      </div>
+      <br />
+      <!-- <div class="d-flex">
+        <button class="m-2 btn-success size-button" (click)="changeImage('white')"></button>
+        <button class="m-2 btn-warning size-button" (click)="changeImage('yellow')"></button>
+        <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
+      </div>
+      <br /> -->
+      <a class="btn btn-outline-success" href="#apaperMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
 </carousel>
