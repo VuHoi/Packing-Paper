@@ -11,4 +11,17 @@
 <body>
   <app-root></app-root>
 </body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPhugwiyFKLlivW16DmDRw6G-glo_nGhIFq0Gcc5E8SM0NAug/exec'
+    const form = document.forms['submit-to-google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          console.log('Success!', response);
+          form.reset();
+      })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>

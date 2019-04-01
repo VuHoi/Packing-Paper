@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     NgxPageScrollModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     CarouselModule.forRoot(),
     RatingModule.forRoot(),
   ],

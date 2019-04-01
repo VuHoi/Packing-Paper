@@ -1,0 +1,20 @@
+input{
+    min-height: 50px;
+    margin:10px;
+}
+
+ /* mobile */
+ @media only screen and (max-width: 600px) {
+.res{
+    display: block !important;
+}
+   form{
+       width: 100vw !important;
+   }
+} 
+.res{
+    display: flex;
+}
+form{
+    width: 500px;
+}
