@@ -48,39 +48,39 @@ export class SlideComponent implements OnInit {
   constructor(private shareService: SharedService) { }
 
   ngOnInit() {
-    let time = 0;
-    interval(5000)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe(() => {
-        time++;
-        if (time !== 4 && time !== 5 && time !== 7 && time !== 8) {
-          let color = 'white';
-          if (this.selectedPage1 === 'white') {
-            this.selectedPage1 = 'yellow';
-            color = 'yellow';
-            this.yellowAnim = 'enter';
-          } else if (this.selectedPage1 === 'yellow') {
-            this.selectedPage1 = 'red';
-            color = 'red';
-            this.redAnim = 'enter';
-          } else if (this.selectedPage1 === 'red') {
-            this.selectedPage1 = 'white';
-            color = 'white';
-            this.greenAnim = 'enter';
-          }
-          this.urlImage = `/assets/images/${color}-paper.png`;
-          this.stateAnim = 'enter';
-          setTimeout(() => {
-            this.stateAnim = 'leave';
-            this.redAnim = 'leave';
-            this.yellowAnim = 'leave';
-            this.greenAnim = 'leave';
-          }, 300);
-        }
-        if (time === 8) {
-          time = 0;
-        }
-      });
+    // let time = 0;
+    // interval(5000)
+    //   .pipe(takeUntil(this.destroy$))
+    //   .subscribe(() => {
+    //     time++;
+    //     if (time !== 4 && time !== 5 && time !== 7 && time !== 8) {
+    //       let color = 'white';
+    //       if (this.selectedPage1 === 'white') {
+    //         this.selectedPage1 = 'yellow';
+    //         color = 'yellow';
+    //         this.yellowAnim = 'enter';
+    //       } else if (this.selectedPage1 === 'yellow') {
+    //         this.selectedPage1 = 'red';
+    //         color = 'red';
+    //         this.redAnim = 'enter';
+    //       } else if (this.selectedPage1 === 'red') {
+    //         this.selectedPage1 = 'white';
+    //         color = 'white';
+    //         this.greenAnim = 'enter';
+    //       }
+    //       this.urlImage = `/assets/images/${color}-paper.png`;
+    //       this.stateAnim = 'enter';
+    //       setTimeout(() => {
+    //         this.stateAnim = 'leave';
+    //         this.redAnim = 'leave';
+    //         this.yellowAnim = 'leave';
+    //         this.greenAnim = 'leave';
+    //       }, 300);
+    //     }
+    //     if (time === 8) {
+    //       time = 0;
+    //     }
+    //   });
   }
 
 
