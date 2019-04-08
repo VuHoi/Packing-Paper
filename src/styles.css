@@ -13,3 +13,14 @@
 .text{
     font-weight: 500;
 }
+
+span.carousel-control-next-icon{
+    background-image: url("https://image.flaticon.com/icons/png/512/118/118740.png") !important;
+}
+
+span.carousel-control-prev-icon{
+    background-image: url("http://downloadicons.net/sites/default/files/previous-page-arrow-icon-76266.png") !important;
+}
+li.ng-star-inserted{
+    background-color: black !important;
+}
