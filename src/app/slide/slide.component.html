@@ -39,8 +39,8 @@
 </div>
 <carousel class="desktop background" id="slide">
   <slide>
-    <div class="d-flex">
-      <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
+    <div class="d-flex" style="height:608px">
+      <div class="mr-auto ml-5  d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
         <h3 class="font-weight-bold">
           Giấy gói bánh bao
         </h3>
@@ -58,7 +58,7 @@
           <button class="m-2 btn btn-danger size-button" [@button]="redAnim" (click)="changeImage('red')"></button>
         </div> -->
       </div>
-      <div class=" mr-5 d-flex align-items-center  w-60 justify-content-center heightHeader flex-column ">
+      <div class=" mr-5 d-flex align-items-center h-100  w-60 justify-content-center heightHeader flex-column ">
         <!-- <img class="heightHeader rotate" src="/assets/images/pattern.png" /> -->
         <div class="text-center"> 
           <img class="heightHeader h-75x" [src]="urlImage" [@slide]="stateAnim" />
@@ -67,7 +67,7 @@
     </div>
   </slide>
   <slide>
-    <div class="d-flex">
+    <div class="d-flex" style="height:608px">
       <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
         <h3 class="font-weight-bold">
           Giấy gói bánh mì
@@ -90,7 +90,7 @@
   </slide>
 
   <slide>
-    <div class="d-flex">
+    <div class="d-flex" style="height:608px">
       <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
         <h3 class="font-weight-bold">
           Giấy gói thuốc bắc
@@ -117,7 +117,7 @@
     </div>
   </slide>
   <slide>
-    <div class="d-flex">
+    <div class="d-flex" style="height:608px">
       <div class="mr-auto ml-5 d-flex align-items-center justify-content-center w-40 heightHeader flex-column">
         <h3 class="font-weight-bold">
           Giấy A4(Giấy văn phòng)
@@ -165,7 +165,7 @@
           <button class="m-2 btn btn-danger size-button" [@button]="redAnim" (click)="changeImage('red')"></button>
         </div>
       <br /> -->
-      <a class="btn btn-outline-success" href="#dumplingMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
+      <a class="btn btn-outline-success mb-5 mt-2" href="#dumplingMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
   <slide>
@@ -186,7 +186,7 @@
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
       <br /> -->
-      <button class="btn btn-outline-success" href="#breadMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</button>
+      <button class="btn btn-outline-success mb-5 mt-2" href="#breadMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</button>
     </div>
   </slide>
   <slide>
@@ -207,7 +207,7 @@
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
       <br /> -->
-      <a class="btn btn-outline-success" href="#medicineMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
+      <a class="btn btn-outline-success mb-5 mt-2" href="#medicineMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
   <slide>
@@ -228,7 +228,7 @@
         <button class="m-2 btn-danger size-button" (click)="changeImage('red')"></button>
       </div>
       <br /> -->
-      <a class="btn btn-outline-success" href="#apaperMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
+      <a class="btn btn-outline-success mb-5 mt-2" href="#apaperMobile" [pageScrollSpeed]="300" pageScroll>Chi tiết sản phẩm</a>
     </div>
   </slide>
 </carousel>
