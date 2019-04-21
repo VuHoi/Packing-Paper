@@ -37,7 +37,7 @@ import { SharedService } from '../shareService';
 })
 export class SlideComponent implements OnInit {
   isScroll = false;
-  urlImage = '/assets/images/white-paper.png';
+  urlImage = '/assets/images/banhbao1.png';
   stateAnim = 'leave';
   redAnim = 'leave';
   yellowAnim = 'leave';

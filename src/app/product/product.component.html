@@ -31,32 +31,30 @@
     <div class="d-flex position-relative " style=" height: 550px;">
       <!-- dumpling -->
       <div class="d-flex justify-content-center position-absolute container" @move *ngIf="selected==='dumpling'">
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
-          color="#3EC1D5"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/aaa.png" color="#3EC1D5">
+        </app-product-card>
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/aaapink.png"
           color="#74D384"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/aaablue.png"
           color="#FFCE44"></app-product-card>
       </div>
 
       <!-- bread -->
       <div class="d-flex justify-content-center position-absolute" @move *ngIf="selected==='bread'">
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        <app-product-card rate="4" title="Gói bánh mì" price="80.000" image="/assets/images/banhmi2.png"
           color="#3EC1D5"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        <app-product-card rate="4" title="Gói bánh mì" price="80.000" image="/assets/images/banhmi1.png"
           color="#74D384"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
+        <app-product-card rate="4" title="Gói bánh mì" price="80.000" image="/assets/images/banhmi3.png"
           color="#FFCE44"></app-product-card>
       </div>
 
       <!-- medicine -->
-      <div class="d-flex justify-content-center position-absolute" @move *ngIf="selected==='medicine'">
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
-          color="#3EC1D5"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
-          color="#74D384"></app-product-card>
-        <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/white-paper.png"
-          color="#FFCE44"></app-product-card>
+      <div class="row position-absolute w-100" @move *ngIf="selected==='medicine'">
+        <div class="col-4"></div>
+        <app-product-card class="col-4" rate="4" title="Gói thuốc bắc" price="80.000"
+          image="/assets/images/thuocbac1.png" color="#74D384"></app-product-card>
+        <div class="col-4"></div>
       </div>
     </div>
     <div class="h5 d-flex justify-content-center  mt-3 " id="a4paper">
@@ -66,11 +64,14 @@
       </div>
     </div>
     <div class="d-flex justify-content-center">
-      <app-product-card rate="4" title="Giay A4(Douple One)" price="80.000" image="/assets/images/a4large.png" color="#3EC1D5">
+      <app-product-card rate="4" title="Giay A4(Douple One)" price="80.000" image="/assets/images/a4small.png"
+        color="#3EC1D5">
       </app-product-card>
-      <app-product-card rate="4" title="Giấy A4(IK Plus)" price="80.000" image="/assets/images/ikplus.png" color="#74D384">
+      <app-product-card rate="4" title="Giấy A4(IK Plus)" price="80.000" image="/assets/images/ikplus.png"
+        color="#74D384">
       </app-product-card>
-      <app-product-card rate="4" title="Giấy A4(Paper One)" price="80.000" image="/assets/images/paperone.png" color="#FFCE44">
+      <app-product-card rate="4" title="Giấy A4(Paper One)" price="80.000" image="/assets/images/paperone.png"
+        color="#FFCE44">
       </app-product-card>
     </div>
   </div>
@@ -114,11 +115,11 @@
   </app-product-card>
 
   <div class="h5 d-flex justify-content-center mt-5 " id="apaperMobile">
-      <div>
-        <div class="d-flex justify-content-center "> Giấy văn phòng</div>
-        <div class="lineMobile mt-2 text-center"></div>
-      </div>
+    <div>
+      <div class="d-flex justify-content-center "> Giấy văn phòng</div>
+      <div class="lineMobile mt-2 text-center"></div>
     </div>
+  </div>
   <app-product-card rate="4" title="Gói bánh bao" price="80.000" image="/assets/images/ikplus.png" color="#74D384">
   </app-product-card>
 </div>
